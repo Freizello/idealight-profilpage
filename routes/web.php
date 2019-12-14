@@ -11,9 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('profile', 'ProfileController@index');
+Route::get('/', 'ProfileController@index');
 Route::get('profile/refresh', 'ProfileController@refreshProfil');
